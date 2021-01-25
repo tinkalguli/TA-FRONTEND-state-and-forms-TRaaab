@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #d36363;
+  color: #242424;
+  border: 0;
+  border-radius: 3px;
+  padding: 0.6rem 0.8rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.image-div {
+  padding: 1rem;
+  width: 100%;
+}
+
+.image-div img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
