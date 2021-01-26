@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+h1 {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.bar {
+  width: 5rem;
+  height: 3px;
+  background: chocolate;
+  margin: 0 auto;
+}
+
+.navbar {
+  margin: 2rem auto;
+  width: 20rem;
+}
+
+.navbar li {
+  padding: 0.5rem 0.7rem;
+  list-style: none;
+  color: chocolate;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid chocolate;
+}
+
+.card {
+  margin: 1rem;
+  width: 28rem;
+}
+
+.img-div {
+  border-radius: 5px;
+  padding: 0.3rem;
+  background: chocolate;
+  width: 37%;
+}
+
+.item-info {
+  width: 60%;
+}
+
+.img-div img {
+  width: 100%;
+  display: block;
+}
+
+.description {
+  margin-top: 0.7rem;
+}
+
+.item-heading {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid chocolate;
+}
+
+.price {
+  color: chocolate;
+}
