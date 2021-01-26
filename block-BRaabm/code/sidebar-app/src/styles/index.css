@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.toogle-btn {
+  background: cornsilk;
+  position: fixed;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  left: 5%;
+  top: 85%;
+}
+
+.sidebar {
+  width: 20rem;
+  height: 100vh;
+  background: rgb(255, 149, 149);
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.visible {
+  display: block;
+}
+
+.navbar li {
+  padding: 0.7rem 0.5rem;
+  border-bottom: 1px solid #666;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+main {
+  background: #666;
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 3rem;
+}
