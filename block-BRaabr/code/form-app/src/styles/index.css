@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  outline: 0;
+}
+
+.form-inputs {
+  width: 20rem;
+  padding: 1rem;
+  box-shadow: 0 0 3px 1px #555;
+  border-radius: 10px;
+}
+
+.form-inputs input,
+.form-inputs  textarea:not(.disabled-textarea) {
+  margin-bottom: 1.5rem;
+}
+
+.form-inputs label {
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.validation-form {
+  width: 20rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px 1px #555;
+  border-radius: 5px;
+}
+
+.validation-form label {
+  display: block;
+  margin: 0.8rem 0 0.3rem 0;
+}
+
+.validation-form input {
+  border-width: 1px;
+  border-radius: 3px;
+}
+
+.validation-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.validation-form span {
+  margin-top: 0.5rem;
+  color: #f00;
+  font-size: 0.8rem;
+}
+
+.error {
+  border-color: #f00;
+}
