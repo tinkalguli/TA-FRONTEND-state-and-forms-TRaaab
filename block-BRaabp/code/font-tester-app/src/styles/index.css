@@ -60,6 +60,7 @@ label {
 
 .slider {
   width: 15rem;
+  cursor: grabbing;
 }
 
 .card {
