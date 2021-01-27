@@ -1,0 +1,173 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bar-btn {
+  position: fixed;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 5px;
+  left: 3%;
+  top: 3%;
+  animation: moveMe 0.7s infinite alternate;
+}
+
+@keyframes moveMe {
+  from {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
+
+.blue {
+  color: rgb(0, 196, 196);
+  padding-left: 0.5rem;
+}
+
+.bar-btn span {
+  color: aqua;
+  line-height: 4px;
+  display: block;
+  margin: 7px 0;
+}
+
+.cancel-btn {
+  cursor: pointer;
+}
+
+.nav-heading {
+  padding: 1rem;
+  flex-basis: 5%;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px #555;
+}
+
+.navbar {
+  margin-top: 2rem;
+  flex-basis: 78%;
+}
+
+.modal-open-btn {
+  padding: 0.5rem 0.7rem;
+  background: #333;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-open-btn:hover {
+  background: #dfdfdf;
+  color: #222;
+}
+
+.sidebar {
+  width: 0;
+  height: 100vh;
+  background: rgb(255, 149, 149);
+  opacity:0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.visible {
+  opacity: 1;
+  width: 20rem;
+  visibility: visible;
+}
+
+.navbar li {
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar li:hover {
+  background: rgb(226, 159, 112);
+}
+
+.icon-nav {
+  width: 8rem;
+  margin: 0 auto;
+}
+
+.icon-nav li {
+  list-style: none;
+  padding: 0.5rem;
+  background: #dfdfdf;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.navbar span {
+  margin-right: 1rem;
+}
+
+main {
+  background: #dfdfdf;
+  height: 100vh;
+}
+
+.modal {
+  width: 30rem;
+  text-align: right;
+  background: #ff8282;
+  border-radius: 5px;
+}
+
+
+
+.modal-wrapper {
+  display: grid;
+  place-items: center;
+  background: #6d6d6d4f;
+  width: 100vw;
+  height: 100vh;
+  transform: scale(0);
+}
+
+.scaled {
+  transform: scale(1);
+}
+
+.modal-cancel-btn {
+  margin: 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.modal h2 {
+  text-align: center;
+  margin: 0.5rem 0 3.5rem 0;
+  font-size: 2rem;
+}
