@@ -1,4 +1,4 @@
-export default function Sidebar(props) {
+export default function Modal(props) {
   return(
     <section className={
       props.isModalVisible ? "modal-wrapper scaled" : "modal-wrapper"
