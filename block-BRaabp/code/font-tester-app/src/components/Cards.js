@@ -22,7 +22,7 @@ export default function Cards(props) {
               <p className="author">{fontFamily.author}</p>
               <p
                 className="text"
-                style={{fontSize : props.fontSize, fontFamily : fontFamily.font}}
+                style={{fontSize : `${props.fontSize}px`, fontFamily : fontFamily.font}}
               >{props.text}</p>
             </article>
           ))
