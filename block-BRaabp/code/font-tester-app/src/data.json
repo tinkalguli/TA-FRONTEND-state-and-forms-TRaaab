@@ -1,0 +1,62 @@
+[
+  { 
+    "title" : "Coda Caption",
+    "font" : "'Coda Caption', sans-serif",
+    "author" : "Vernon Adams",
+    "style" : 1
+  },
+  {
+    "title" : "Fraunces",
+    "font" : "'Fraunces', serif",
+    "author" : "Undercase Type, Phaedra Charles, Flavia Zimbardi",
+    "style" : "Variable"
+  },
+  {
+    "title" : "Hachi Maru Pop",
+    "font" : "'Hachi Maru Pop', cursive",
+    "author" : "Nontynet",
+    "style" : 1
+  },
+  {
+    "title" : "Imbue",
+    "font" : "'Imbue', serif",
+    "author" : "Tyler Finck, ETC",
+    "style" : 1
+  },
+  {
+    "title" : "Lato",
+    "font" : "'Lato', sans-serif",
+    "author" : "Łukasz Dziedzic",
+    "style" : 10
+  },
+  {
+    "title" : "Noto Sans JP",
+    "font" : "'Noto Sans JP', sans-serif",
+    "author" : "Google",
+    "style" : 6
+  },
+  {
+    "title" : "Open Sans",
+    "font" : "'Open Sans', sans-serif",
+    "author" : "Steve Matteson",
+    "style" : 10
+  },
+  {
+    "title" : "Potta One",
+    "font" : "'Potta One', cursive",
+    "author" : "Font Zone 108",
+    "style" : 1
+  },
+  {
+    "title" : "Roboto",
+    "font" : "'Roboto', sans-serif",
+    "author" : "Christian Robertson",
+    "style" : 12
+  },
+  {
+    "title" : "Yusei Magic",
+    "font" : "'Yusei Magic', sans-serif",
+    "author" : "Tanukizamurai",
+    "style" : 1
+  }
+]

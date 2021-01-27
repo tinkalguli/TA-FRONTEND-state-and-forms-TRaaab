@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Fraunces&family=Hachi+Maru+Pop&family=Imbue&family=Lato&family=Noto+Sans+JP&family=Open+Sans&family=Potta+One&family=Roboto&family=Yusei+Magic&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-stretch {
+  align-items: stretch;
+}
+
+.header {
+  padding: 1rem 0;
+  box-shadow: 3px 0 5px #555;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.text-input {
+  height: 2rem;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 3px 1px #555;
+  border-radius: 2px;
+  width: 20rem;
+  padding: 0 0.3rem;
+}
+
+input {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+label {
+  font-size: 1.3rem;
+}
+
+.slider {
+  width: 15rem;
+}
+
+.card {
+  width: 31%;
+  margin: 1rem 0;
+  padding: 1rem;
+  min-height: 18rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px #cccccc;
+}
+
+.cards {
+  margin-top: 5rem;
+}
+
+.text {
+  overflow-wrap: break-word;
+}
+
+.font-main-info {
+  margin-bottom: 0.5rem;
+}
+
+.author {
+  margin-bottom: 0.5rem;
+}
