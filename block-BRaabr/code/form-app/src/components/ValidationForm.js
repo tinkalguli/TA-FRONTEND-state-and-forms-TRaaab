@@ -26,9 +26,6 @@ class ValidationForm extends Component {
   validatePassword = (password) => {
     return password.length >= 6;
   }
-  validateConfirmPassword = (confirmPassword) => {
-    return confirmPassword === this.state.password;
-  }
   handleChange = ({target}) => {
     let { name, value } = target;
     let errors = this.state.errors;
@@ -36,23 +33,20 @@ class ValidationForm extends Component {
     switch (name) {
       case "username":
         errors.username = this.validateUsername(value) ? ""
-         : !value ? "Username is required"
          : "Username must be atleast 3 characters";
         break;
       case "email":
         errors.email = this.validateEmail(value) ? ""
-          : !value ? "Email is required"
           : "Email is not valid";
         break;
       case "password":
         errors.password = this.validatePassword(value) ? ""
-          : !value ? "Password is required"
           : "Password must be atleast 6 characters";
         break;
       case "confirmPassword":
-        errors.confirmPassword = this.validateConfirmPassword(value) ? ""
-          : !value ? "Confirm password is required"
-          : "Password is not matching";
+        errors.confirmPassword = !value ? "Password2 is required" : "";
+        break;
+      default:
         break;
     }
 
@@ -64,7 +58,9 @@ class ValidationForm extends Component {
   render() {
     let errors = this.state.errors;
     return (
-      <form className="validation-form">
+      <form
+        className="validation-form"
+        onSubmit={this.handleChange}>
         <h2>Register With Us</h2>
         <label>Username</label>
         <input
@@ -111,6 +107,7 @@ class ValidationForm extends Component {
         {
           errors.confirmPassword ? <span>{errors.confirmPassword}</span> : ""
         }
+        <button type="submit" className="button">Submit</button>
       </form>
     )
   }
