@@ -54,12 +54,10 @@ class ValidationForm extends Component {
           : !value ? "Confirm password is required"
           : "Password is not matching";
         break;
-      default:
-        break;
     }
 
     this.setState({
-      name : value,
+      [name] : value,
       errors : errors
     })
   }
@@ -74,6 +72,7 @@ class ValidationForm extends Component {
           onChange={this.handleChange}
           type="text"
           name="username"
+          value={this.state.username}
           placeholder="Enter Username" />
         {
           errors.username ? <span>{errors.username}</span> : ""
@@ -85,6 +84,7 @@ class ValidationForm extends Component {
           onChange={this.handleChange}
           type="text"
           name="email"
+          value={this.state.email}
           placeholder="Enter Email" />
         {
           errors.email ? <span>{errors.email}</span> : ""
@@ -95,6 +95,7 @@ class ValidationForm extends Component {
           onChange={this.handleChange}
           type="password"
           name="password"
+          value={this.state.password}
           placeholder="Enter Password" />
         {
           errors.password ? <span>{errors.password}</span> : ""
@@ -105,6 +106,7 @@ class ValidationForm extends Component {
           onChange={this.handleChange}
           type="password"
           name="confirmPassword"
+          value={this.state.confirmPassword}
           placeholder="Enter Password again"/>
         {
           errors.confirmPassword ? <span>{errors.confirmPassword}</span> : ""
