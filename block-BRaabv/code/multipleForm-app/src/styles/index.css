@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem 0 0 2rem;
+  display: block;
+  object-fit: cover;
+}
+
+body {
+  background: #bbb;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 2rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+  background: #ccc;
+}
+
+.tags .active {
+  background: rgb(12, 96, 206);
+  color: #fff;
+}
+
+.tags li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tags {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #bbb;
+}
+
+.img-div {
+  flex-basis: 35%;
+}
+
+.form-div {
+  flex-basis: 65%;
+  padding: 2.5rem;
+}
+
+.input-div-50 {
+  flex-basis: 45%;
+}
+
+.input-div {
+  margin-top: 1rem;
+}
+
+.form-one input {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+input[type="date"] {
+  padding: 0.41rem 0.5rem;
+}
+
+.form-one label,
+.label {
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.btn {
+  padding: 0.8rem 1rem;
+  background: rgb(12, 96, 206);
+  color: #fff;
+  font-weight: 500;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid #bbb;
+}
+
+.heading {
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+}
+
+.checkbox-label {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
+
+.checkbox-label input {
+  margin-right: 0.5rem;
+}
+
+.back {
+  background: transparent;
+  color: #222;
+  font-weight: 700;
+}
+
+.chekbox-img {
+  font-size: 5rem;
+  padding: 1rem;
+  width: 40%;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #bbb;
+  border-radius: 0.5rem;
+}
+
+#girl:checked ~ .girl-img,
+#boy:checked ~ .boy-img {
+  background: rgb(12, 96, 206);
+}
+
+.form-three label {
+  display: block;
+}
+
+.display-0 {
+  display: none;
+}
