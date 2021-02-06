@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  outline: none;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+}
+
+.container {
+  max-width: 76rem;
+  padding: 0 1rem;
+  margin: 4rem auto;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  background: #ddd;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  transition: all 0.5s ease;
+}
+
+.tag:hover{
+  border: 1px solid #444;
+}
+
+.active {
+  background: #333;
+  color: aliceblue;
+}
+
+.size-sec {
+  flex-basis: 16rem;
+}
+
+.card-sec {
+  flex-basis: calc(100% - 18rem);
+}
+
+.order {
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+}
+
+.card {
+  max-width: 14rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+  margin: 1rem 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: #bbb;
+  border-radius: 5px;
+}
+
+.card:hover .btn {
+  background: #019790;
+  transition: all 0.5s ease;
+}
+
+.img-div {
+  position: relative;
+}
+
+.img-div span {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  width: max-content;
+  font-size: 0.6rem;
+  color: #fff;
+  background: #222;
+  padding: 0.3rem;
+  border-radius: 2px;
+}
+
+.title {
+  height: 3rem;
+  margin-top: 0.3rem;
+  font-weight: 600;
+}
+
+.bar {
+  border: 0;
+  border-top: 3px solid #019790;
+  width: 3rem;
+  margin: 0 auto;
+}
+
+.price {
+  margin-top: 0.5rem;
+}
+
+.price span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.installment {
+  color: #777;
+  height: 1.3rem;
+}
+
+.installment span {
+  font-weight: 600;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.8rem;
+  background: #111;
+  border: none;
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background: #019790;
+  transition: all 0.5s ease;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart {
+  width: 30rem;
+  background: #222;
+  color: #ddd;
+  position: fixed;
+  left: auto;
+  top: 0;
+  right: 0;
+  z-index: 99;
+  height: 100%;
+}
+
+.cart-title {
+  width: 15rem;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.cart-title h3 {
+  margin: 2rem 0;
+}
+
+.cart-icon-inside {
+  width: 3rem;
+  margin-right: 0.7rem;
+}
+
+.no-item {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.cart-items {
+  padding: 1rem;
+  height: 27rem;
+  overflow-y: auto;
+}
+
+.cart-item {
+  border-top: 1px solid #bbb;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+.cart-item-btns {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.cart-item-img-div {
+  width: 5rem;
+  margin-right: 0.8rem;
+}
+
+.cart-item-img-div img {
+  border-radius: 2px;
+}
+
+.cart-total {
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -5px 5px #111;
+  padding: 1rem;
+}
+
+.checkout-btn {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  color: aqua;
+  text-align: right;
+}
+
+.cart-item-price {
+  font-size: 1.3rem;
+  color: aqua;
+  margin: 0.7rem 0;
+}
+
+.cart-item-installment {
+  margin: 0.7rem 0;
+}
+
+.cart-total-installment {
+  font-size: 0.8rem;
+  color: #ddd;
+}
+
+.cart-item-btns button {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  display: grid;
+  place-items: center;
+  line-height: 0;
+  font-weight: 700;
+  cursor: pointer;
+  border: 0;
+  border: 1px solid #333;
+  border-radius: 3px;
+  background: #b9b9b9;
+}
+
+.cart-item-btns button:hover {
+  background: #fff;
+}
+
+.toggle-btn {
+  outline: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: grid;
+  place-items: center;
+  background: #222;
+  border: none;
+  border-radius: 0 0 0 5px;
+  position: absolute;
+  left: -3.5rem;
+  top: 0;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background: #003f3b;
+}
+
+.toggle-btn img {
+  width: 2.3rem;
+}
+
+.cart-disable {
+  width: 0;
+}
+
+#disable-btn {
+  pointer-events: none;
+  background: #333;
+}
+
+.bag-img-div {
+  position: relative;
+}
+
+.total-count {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+  background: aqua;
+  color: #222;
+  position: absolute;
+  left: 60%;
+  top: 60%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 0;
+}
