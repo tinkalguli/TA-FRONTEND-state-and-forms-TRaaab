@@ -30,6 +30,30 @@ class App extends React.Component {
       activeOrder : value
     })
   }
+  handleUpdateLocalStorage = () => {
+    localStorage
+      .setItem("carts", JSON.stringify(this.state.selectedItems));
+  }
+  componentDidMount() {
+    if(localStorage.carts) {
+      this.setState({selectedItems : JSON.parse(localStorage.carts) || []})
+    }
+    window.addEventListener(
+      "beforeunload",
+      this.handleUpdateLocalStorage
+    );
+  }
+  componentWillUnmount() {
+    window.removeEventListener(
+      "beforeunload",
+      this.handleUpdateLocalStorage
+    );
+  }
+  toggleClickHandler = () => {
+    this.setState(({isCartVisible}) => ({
+      isCartVisible : !isCartVisible
+    }))
+  }
   addCartItem = (item) => {
     let allSelectedItems = [...this.state.selectedItems];
     let selectedItem = allSelectedItems
@@ -51,18 +75,11 @@ class App extends React.Component {
       isCartVisible : true
     })
   }
-  toggleClickHandler = () => {
-    this.setState(({isCartVisible}) => ({
-      isCartVisible : !isCartVisible
-    }))
-  }
   removeCartItem = (item) => {
     let allSelectedItems = [...this.state.selectedItems];
-    let ids = allSelectedItems.map(val => val.id);
-    let index = ids.indexOf(item.id);
-    allSelectedItems.splice(index, 1);
+    let filteredItems = allSelectedItems.filter(p => p.id !== item.id);
     this.setState({
-      selectedItems : allSelectedItems
+      selectedItems : filteredItems
     })
   }
   decreaseItemCount = (item) => {
@@ -98,11 +115,11 @@ class App extends React.Component {
       <>
         <header>
           <Cart
+            isCartVisible={this.state.isCartVisible}
             increaseItemCount={this.addCartItem}
             decreaseItemCount={this.decreaseItemCount}
             removeCartClick={this.removeCartItem}
             toggleClickHandler={this.toggleClickHandler}
-            isCartVisible={this.state.isCartVisible}
             products={this.state.selectedItems}/>
         </header>
         <section className="container flex-wrap">
